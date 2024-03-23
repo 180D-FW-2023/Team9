@@ -26,11 +26,11 @@ logging.basicConfig(level=logging.DEBUG)
 from picamera2 import Picamera2, Preview
 import pygame
 import threading
+import config
 
 
 
-
-openai.api_key = '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'
+openai.api_key = config.open_api_key
 os.environ['OPENAI_API_KEY'] = openai.api_key
 model = 'gpt-3.5-turbo'
 global reset
@@ -63,10 +63,10 @@ object_detection_event.set()  # Set the event to initially allow execution
 #objclass = ''
 
 # Twitter API
-consumer_key = 'u6QyY8KUBGtxQoL0dddghrso9'
-consumer_secret = 'HCLFXxqe3iS8qySLyNNPWS8Jg9cqt9WV947RKWySvsC8h2fqQN'
-access_token = '1752849859114311680-tyJ3QZ6XztjtDO4f5vYhTbxQnPyWpx'
-access_token_secret = 'oyFTNIL0wNyLvyVIwHB3slkDXSEgDjPPFmzbfOisGbcpw'
+consumer_key = config.twitter_consumer_key
+consumer_secret = config.twitter_consumer_secret
+access_token = config.twitter_access_token
+access_token_secret = config.twitter_access_token_secret
 client = tweepy.Client(
     consumer_key=consumer_key, consumer_secret=consumer_secret,
     access_token=access_token, access_token_secret=access_token_secret
@@ -460,6 +460,8 @@ def send_message():
     
     CARRIER = "verizon"
     MESSAGE = "Your loved one Hamza had a car get too close to him and he may have been hit."
+
+
 
     EMAIL = "helmetbuddy7@gmail.com"
     PASSWORD = "tfdz xmzq tigr katv"

@@ -30,7 +30,7 @@ import threading
 
 
 
-#openai.api_key = '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'
+
 os.environ['OPENAI_API_KEY'] = openai.api_key
 model = 'gpt-3.5-turbo'
 reset = False

@@ -32,7 +32,7 @@ net = cv2.dnn.readNetFromCaffe('mobilenet_ssd.prototxt', 'mobilenet_ssd.caffemod
 # ^ matplotlib is great for visualising data and for testing purposes but usually not needed for production
 
 
-##openai.api_key = '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'
+
 os.environ['OPENAI_API_KEY'] = openai.api_key
 model = 'gpt-3.5-turbo'
 # Set up the speech recognition and text-to-speech engines
