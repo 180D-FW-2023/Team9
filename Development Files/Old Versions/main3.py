@@ -29,7 +29,7 @@ logging.basicConfig(level=logging.DEBUG)
 # ^ matplotlib is great for visualising data and for testing purposes but usually not needed for production
 
 
-openai.api_key = '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'
+#openai.api_key = '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'
 os.environ['OPENAI_API_KEY'] = openai.api_key
 model = 'gpt-3.5-turbo'
 # Set up the speech recognition and text-to-speech engines
@@ -45,10 +45,10 @@ engine.setProperty('voice', 'english')
 #image_processor = YolosImageProcessor.from_pretrained("hustvl/yolos-tiny")
 #objclass = ''
 
-consumer_key = 'u6QyY8KUBGtxQoL0dddghrso9'
-consumer_secret = 'HCLFXxqe3iS8qySLyNNPWS8Jg9cqt9WV947RKWySvsC8h2fqQN'
-access_token = '1752849859114311680-tyJ3QZ6XztjtDO4f5vYhTbxQnPyWpx'
-access_token_secret = 'oyFTNIL0wNyLvyVIwHB3slkDXSEgDjPPFmzbfOisGbcpw'
+#consumer_key = 'u6QyY8KUBGtxQoL0dddghrso9'
+#consumer_secret = 'HCLFXxqe3iS8qySLyNNPWS8Jg9cqt9WV947RKWySvsC8h2fqQN'
+#access_token = '1752849859114311680-tyJ3QZ6XztjtDO4f5vYhTbxQnPyWpx'
+#access_token_secret = 'oyFTNIL0wNyLvyVIwHB3slkDXSEgDjPPFmzbfOisGbcpw'
 client = tweepy.Client(
     consumer_key=consumer_key, consumer_secret=consumer_secret,
     access_token=access_token, access_token_secret=access_token_secret

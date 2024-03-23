@@ -14,8 +14,8 @@ from picamera2 import Picamera2, Preview
 # ^ matplotlib is great for visualising data and for testing purposes but usually not needed for production
 
 
-openai.api_key = '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'
-os.environ['OPENAI_API_KEY'] = openai.api_key
+#openai.api_key = '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'
+#os.environ['OPENAI_API_KEY'] = openai.api_key
 model = 'gpt-3.5-turbo'
 # Set up the speech recognition and text-to-speech engines
 r = sr.Recognizer()
